@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ShiftCorner Food Nutrient Search</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/food.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/food.css" media="all" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>ShiftCorner Food Nutrient Search</h1>
+      </div>
+      <table class="form">
+        <tr>
+          <th><label for="food">Food Name:</label></th>
+          <th><label for="searchmode">Food Type:</label></th>
+          <th><label for="nutrients">Nutrients:</label></th>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <input type="text" name="searchfood" id="searchfood" />
+            </div>
+          </td>
+          <td>
+            <div>
+              <select name="searchmode" id="searchtype">
+              <option value="recipe">Recipe</option>
+              <option value="grocery">Grocery</option>
+              <option value="restaurant">Restaurant</option>
+              <option value="usda">Usda</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <div>
+              <select name="nutrients" id="nutrients">
+              <option value="calories">Calories</option>
+              <option value="fat">Fat</option>
+              <option value="protein">Protein</option>
+              <option value="carb">Carb</option>
+              </select>
+              </div>
+          </td>
+          <td>
+            <div>
+              <button type="submit" name="submit"  onclick="submit()" id="searchsubmit">Submit</button>
+            </div>
+          </td>
+        </tr>
+
+      </table>
+<div id="foodwrapper">
+
+<div id="content">
+<h2>Searching Your Favourite Food Nutrients.</h2>
+<div id="maincontent">
+<p>Have the knowledge about your favorite food calories, fat, protein, and carb nutrients.</p>
+<p>The platform display top four food items queried from the Nutritionix API; one of the top leading
+nutrition API.</p>
+</div>
+
+</div>
+
+<div id="side">
+  <h2>Nutrient Analysis</h2>
+  <div id="output">
+    <p>Top Four Related Searched Food Items Analysis.</p>
+    <p>What about an analysis: We care about your health, and the platform can assist you to have the right Nutrient
+      insight, from the stats provided.
+    </p>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>
